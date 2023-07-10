@@ -10,14 +10,12 @@
   margin-top: 20px;
   margin-bottom: 0;
   width: 100%;
-  /* font: 1em sans-serif; */
   border-right: none;
   border-top: none;
   border-left: none;
 }
 
 #submit {
-  /* font-size: 12px; */
   background-color: #4056A1;
   border: none;
   color: white;

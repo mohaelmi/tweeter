@@ -28,7 +28,6 @@ body {
  main {
   width: 90%;
   margin: auto;
-  /* text-align: center; */
   background-color: #f4f1ec;
  }
 
@@ -61,8 +60,6 @@ article header {
   height: 80px;
   background-color: #f4f1ec;
   margin-top: 0px;
-  /* padding: 20px; */
-  /* justify-content: space-around; */
 }
 
 article header .email {
@@ -79,7 +76,6 @@ article .tweet  {
   padding-bottom: 20px;
   font-family: 'Source Sans 3';
   border-bottom: 5px solid;
-  /* text-align: center; */
 }
 
 .icon:hover {
