@@ -1,0 +1,33 @@
+.label {
+  /* text-align: center; */
+  display: block;
+}
+
+
+#tweet-text {
+  border-bottom: 5px solid;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  width: 100%;
+  /* font: 1em sans-serif; */
+  border-right: none;
+  border-top: none;
+  border-left: none;
+}
+
+#submit {
+  /* font-size: 12px; */
+  background-color: #4056A1;
+  border: none;
+  color: white;
+  font-family: 'bungee';
+  margin-top: 10px;
+}
+
+.counter {
+  position: absolute;
+  right: 5%;
+  font-family: 'bungee';
+}
+

@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+}
+
+
+#logo {
+  font-family: 'bungee';
+  padding-left: 1.5em;
+  padding-top: 1.5em;
+  padding-right: 1.5em;
+ }
+
+ #new-tweet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.5em;
+  padding-right: 1.5em;
+ }
+
+ /* #new-tweet i {
+ } */
