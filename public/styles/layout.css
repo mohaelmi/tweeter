@@ -18,8 +18,74 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans 3';
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ main {
+  width: 90%;
+  margin: auto;
+  /* text-align: center; */
+  background-color: #f4f1ec;
+ }
+
+ #tweets {
+  border: 5px solid black;
+  margin: 30px 0px 20px 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+ }
+
+ #tweets:hover {
+  box-shadow: 10px 10px rgba(29, 6, 236, 0.2);
+ }
+
+
+
+article footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+article footer output {
+  padding: 10px;
+}
+
+article header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 80px;
+  background-color: #f4f1ec;
+  margin-top: 0px;
+  /* padding: 20px; */
+  /* justify-content: space-around; */
+}
+
+article header .email {
+  position: absolute;
+  right: 90px;
+}
+
+article header .name {
+  margin-left: 25px;
+}
+
+article .tweet  {
+  padding-bottom: 20px;
+  font-family: 'Source Sans 3';
+  border-bottom: 5px solid;
+  /* text-align: center; */
+}
+
+.icon:hover {
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+
+.icon {
+  padding: 10px
+}
