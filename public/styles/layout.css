@@ -67,6 +67,7 @@ article header {
 
 article header .email {
   position: absolute;
+  opacity: .4;
   right: 90px;
 }
 
