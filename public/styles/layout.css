@@ -72,7 +72,7 @@ article header .name {
   margin-left: 25px;
 }
 
-article .tweet  {
+article #tweets-container  {
   padding-bottom: 20px;
   font-family: 'Source Sans 3';
   border-bottom: 5px solid;
