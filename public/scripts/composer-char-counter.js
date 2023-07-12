@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   $('#tweet-text').on('input', function() {
     const counterLimit = 140;
     //grap tweet-text id and counter class using 'this'
@@ -14,5 +15,6 @@ $(document).ready(function() {
       $(counter).val(counting);
     }
   });
+  
 });
 

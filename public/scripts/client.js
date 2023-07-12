@@ -48,6 +48,25 @@ $(document).ready(() => {
 
   renderTweets(data);
 
+
+  //submit a tweet
+  const $form = $('#sub-form')
+  $form.on("submit", function(event) {
+    event.preventDefault()
+    // const $tweet = $('#tweet-text').val()
+    $.ajax({ 
+      url: '/tweets', 
+      method: "POST",
+      data: $form.serialize(),
+      success: function (res) {
+        console.log(res);
+      },
+      fail: function (error) {
+        console.log("error: ", error);
+      }
+    })
+  })
+
 });
 
 
