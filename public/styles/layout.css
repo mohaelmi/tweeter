@@ -31,14 +31,17 @@ body {
   background-color: #f4f1ec;
  }
 
- #tweets {
-  border: 5px solid black;
-  margin: 30px 0px 20px 0px;
-  padding-left: 20px;
-  padding-right: 20px;
+
+
+ #tweets article {
+  border: 3px solid black;
+  margin: 30px 0px 30px 0px;
+  padding: 20px 20px 20px 20px;
+
+
  }
 
- #tweets:hover {
+ #tweets article:hover {
   box-shadow: 10px 10px rgba(29, 6, 236, 0.2);
  }
 
@@ -47,6 +50,8 @@ body {
 article footer {
   display: flex;
   justify-content: space-between;
+  border-top: 3px solid black;
+
 }
 
 /* article footer output {
@@ -65,7 +70,7 @@ article header {
 article header .email {
   position: absolute;
   opacity: .4;
-  right: 90px;
+  right: 100px;
 }
 
 article header .name {
@@ -84,5 +89,5 @@ article #tweets-container  {
 }
 
 .icon {
-  padding: 10px
+  padding-top: 5px
 }
