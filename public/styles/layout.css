@@ -49,15 +49,15 @@ article footer {
   justify-content: space-between;
 }
 
-article footer output {
+/* article footer output {
   padding: 10px;
-}
+} */
 
 article header {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  height: 80px;
+  align-items: center;
+  height: 70px;
   background-color: #f4f1ec;
   margin-top: 0px;
 }
@@ -69,7 +69,7 @@ article header .email {
 }
 
 article header .name {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 article #tweets-container  {
