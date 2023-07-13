@@ -60,7 +60,7 @@ $(document).ready(() => {
   }
   const createTweetElement = function(tweet) {
     let date = timeago.format(tweet.created_at)
-    console.log('tweet', tweet) 
+    // console.log('tweet', tweet) 
     const $tweetMarkup = $(`<article>
     <header>
       <div>
@@ -86,21 +86,28 @@ $(document).ready(() => {
   //submit a tweet
   const $form = $('#sub-form')
   $form.on("submit", function(event) {
+    let $counter = $('.counter')
     event.preventDefault()
-    // const $tweet = $('#tweet-text').val()
+    let tweet = $('#tweet-text').val()
+    if($counter < 0) {
+      alert("Tweet is empty, please write your tweet!")
+      return
+    }
+    if(tweet.length > 140) {
+      alert("Your tweet is too long!")
+      return
+    }
     $.ajax({ 
       url: '/tweets', 
       method: "POST",
       data: $form.serialize(),
-      success: function (res) {
-        console.log(res);
-      },
       fail: function (error) {
         console.log("error: ", error);
       }
     })
+   $('#tweet-text').val("")
+    
   })
-
 });
 
 
