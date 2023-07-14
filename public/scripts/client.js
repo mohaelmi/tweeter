@@ -14,11 +14,18 @@ $(document).ready(() => {
     });
   };
 
+  const escape = function (tweet) {
+    let div = document.createElement("div")
+    let div2 = document.createElement("div")
+    div2.appendChild(document.createTextNode(tweet))
+    div.appendChild(div2)
+    // div.appendChild($(`<div> ${tweet} </div>`));
+    return div.innerHTML;
+  };
+
 
   const renderTweets = function(tweets) {
-    // tweets.sort((a, b) => timeago.format(b.created_at) - timeago.format(a.created_at))
-    // console.log(tweets);
-
+    //iterate over array of tweets reversely or from newest one
     tweets.reverse().forEach(tweet => {
       let $tweet = createTweetElement(tweet);
       $('#tweets').append($tweet);
@@ -29,7 +36,6 @@ $(document).ready(() => {
   };
   const createTweetElement = function(tweet) {
     let date = timeago.format(tweet.created_at);
-    // console.log('tweet', tweet)
     const $tweetMarkup = $(`<article class= "tweet">
     <header>
       <div>
@@ -38,7 +44,7 @@ $(document).ready(() => {
       <div class="name">${tweet.user.name}</div>
       <div class="email">${tweet.user.handle}</div> 
     </header>
-    <div>  ${tweet.content.text}</div>
+    <div> ${escape(tweet.content.text)} </div>
     <footer>
       <output class="date">${date}</output>
       <div>
@@ -52,8 +58,9 @@ $(document).ready(() => {
   };
 
   loadTweets();
-  //submit a tweet
 
+
+  //submit a tweet
   const $form = $('#sub-form');
   $form.on("submit", function(event) {
    
@@ -72,6 +79,7 @@ $(document).ready(() => {
       method: "POST",
       data: $form.serialize(),
       success: function() {
+        
         $('#tweet-text').val("");
         $('#tweets').empty();
         loadTweets();
