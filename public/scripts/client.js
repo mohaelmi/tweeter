@@ -16,10 +16,7 @@ $(document).ready(() => {
 
   const escape = function (tweet) {
     let div = document.createElement("div")
-    let div2 = document.createElement("div")
-    div2.appendChild(document.createTextNode(tweet))
-    div.appendChild(div2)
-    // div.appendChild($(`<div> ${tweet} </div>`));
+    div.appendChild( document.createTextNode(tweet) )
     return div.innerHTML;
   };
 
@@ -67,11 +64,16 @@ $(document).ready(() => {
     event.preventDefault();
     let $tweet = $('#tweet-text').val();
     if ($tweet.length < 1) {
-      alert("Tweet is empty, please write your tweet!");
+      $('.display-error').empty()
+      $('.display-error').text("Tweet area is empty, please write your tweet.")
+      $('.error').slideDown()
+      
       return;
     }
     if ($tweet.length > 140) {
-      alert("Your tweet is too long!");
+      $('.display-error').empty()
+      $('.display-error').text("Your tweet is too long!")
+      $('.error').slideDown()
       return;
     }
     $.ajax({
@@ -82,6 +84,7 @@ $(document).ready(() => {
         
         $('#tweet-text').val("");
         $('#tweets').empty();
+        $('.error').slideUp()
         loadTweets();
       },
       fail: function(error) {
