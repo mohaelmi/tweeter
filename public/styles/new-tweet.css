@@ -4,6 +4,9 @@
   margin-top: 50px;
 }
 
+#sub-form {
+ display: none;
+}
 
 #tweet-text {
   border-bottom: 5px solid;

@@ -32,6 +32,8 @@ $(document).ready(() => {
 
   };
   const createTweetElement = function(tweet) {
+    const $name = $('.title-name')
+    $name.text(tweet.user.name)
     let date = timeago.format(tweet.created_at);
     const $tweetMarkup = $(`<article class= "tweet">
     <header>
@@ -93,6 +95,10 @@ $(document).ready(() => {
     });
  
   });
+
+  $('#new-tweet').on('click', ()=> {
+    $('#sub-form').toggle()
+  })
 });
 
 
