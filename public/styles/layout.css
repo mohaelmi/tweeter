@@ -27,7 +27,7 @@ body {
 
  main {
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
   background-color: #f4f1ec;
  }
 
@@ -61,16 +61,18 @@ article footer {
 article header {
   display: flex;
   flex-direction: row;
-  align-items: center;
+
   height: 70px;
   background-color: #f4f1ec;
   margin-top: 0px;
+  margin-bottom: 50px;
 }
 
 article header .email {
-  position: absolute;
+  position:absolute;
   opacity: .4;
   right: 100px;
+  /* float: right; */
 }
 
 article header .name {
@@ -91,3 +93,6 @@ article #tweets-container  {
 .icon {
   padding-top: 5px
 }
+
+
+

@@ -9,6 +9,23 @@ nav {
   color: #FFFFFF;
 }
 
+/* table viewport size minimum 768px width */
+@media only screen and (max-width: 768px) {
+  nav {
+    background-color: transparent;
+  }
+  .img {
+    width: 150px;
+    margin-top: 50px;
+   }
+  #user-info {
+    margin-top: auto;
+    padding-top: 10px;
+    
+  }
+
+}
+
 
 #logo {
   font-family: 'bungee';
@@ -17,9 +34,7 @@ nav {
   padding-right: 1.5em;
  }
 
- .img {
-  border-radius: 50%;
- }
+
 
  #new-tweet {
   display: flex;
@@ -28,9 +43,10 @@ nav {
   padding-top: 1.5em;
   padding-right: 1.5em;
   cursor: context-menu;
+  font-size: 20px;
  }
 
-
+/* i copied this code from somewhere internet and resposible for moving arrow up and down. i couldn't understand it well  */
 .arrow-down {
   margin-top: 10px;
   Color: #FF0000;

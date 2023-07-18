@@ -34,19 +34,12 @@
 }
 
 
-/* .display-error {
-  color: #D8000C;
-  background-color: #FFBABA;
-  
-  padding: 2px;
-} */
-
 .error {
   display: flex;
   border:  #D8000C solid 2px;
   padding: 10px 10px 10px 30px;
   justify-content: space-around;
-  align-items: self-end;
+
   padding-left: 50px;
 }
 
