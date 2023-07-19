@@ -14,3 +14,10 @@ A renponaive simple single-page AJAX-based tweeter clone that uses jQuery, HTML5
 
 - Express
 - Node 5.10.x or above
+
+## Final product
+
+![Mian page in PC/laptops size](https://github.com/mohaelmi/tweeter/blob/master/docs/PC-%20screen%20tweet%20.png?raw=true)
+
+![mobile size](https://github.com/mohaelmi/tweeter/blob/master/docs/tablet-size.png?raw=true)
+
