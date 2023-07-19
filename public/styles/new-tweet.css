@@ -1,11 +1,10 @@
 .label {
-  /* text-align: center; */
   display: block;
   margin-top: 50px;
 }
 
 #sub-form {
- display: none;
+  display: none;
 }
 
 #tweet-text {
@@ -37,24 +36,24 @@
 
 .error {
   display: flex;
-  border:  #D8000C solid 2px;
+  border: #D8000C solid 2px;
   padding: 10px 10px 10px 30px;
   justify-content: space-around;
 
   padding-left: 50px;
 }
 
-.new-tweet > div > img{
+.new-tweet>div>img {
   width: 40px;
   height: 40px;
 }
 
-.new-tweet > div {
+.new-tweet>div {
   margin-bottom: 2em;
   display: none;
 }
 
-.display-error{
+.display-error {
   font-size: 24px;
   color: #D8000C;
 

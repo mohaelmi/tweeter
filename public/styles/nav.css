@@ -35,14 +35,16 @@ nav {
   nav {
     background-color: transparent;
   }
+
   .img {
     width: 150px;
     margin-top: 50px;
-   }
+  }
+
   #user-info {
     margin-top: auto;
     padding-top: 10px;
-    
+
   }
 
   #new-tweet-arrow {
@@ -60,19 +62,31 @@ nav {
   margin-top: 10px;
   Color: #FF0000;
 
-  -webkit-animation: mover 2s infinite  alternate;
-  animation: mover 2s infinite  alternate;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
 }
+
 .arrow-down {
-    -webkit-animation: mover 2s infinite  alternate;
-    animation: mover 1s infinite  alternate;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 1s infinite alternate;
 }
+
 @-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
 }
+
 @keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
 }
- 

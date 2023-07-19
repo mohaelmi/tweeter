@@ -6,7 +6,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -34,22 +37,22 @@ main {
   width: 90%;
   margin: 0 auto;
   background-color: #f4f1ec;
-  
- }
+
+}
 
 
-
- #tweets article {
+/* section container that holds all tweets */
+#tweets article {
   border: 3px solid black;
   margin: 30px 0px 30px 0px;
   padding: 20px 20px 20px 20px;
 
 
- }
+}
 
- #tweets article:hover {
+#tweets article:hover {
   box-shadow: 10px 10px rgba(29, 6, 236, 0.2);
- }
+}
 
 
 
@@ -76,7 +79,7 @@ article header .name {
   margin-left: 20px;
 }
 
-article #tweets-container  {
+article #tweets-container {
   padding-bottom: 20px;
   font-family: 'Source Sans 3';
   border-bottom: 5px solid;
@@ -103,6 +106,3 @@ article #tweets-container  {
 .icon {
   padding-top: 5px
 }
-
-
-

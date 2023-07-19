@@ -11,7 +11,7 @@ header {
 
 .img {
   border: 20px
- }
+}
 
 /* Laptops / Desktops: minimum width of 1024px */
 @media only screen and (min-width: 1024px) {
@@ -33,7 +33,7 @@ header {
   article header .email {
     right: 7%;
   }
-  
-  
-  
+
+
+
 }

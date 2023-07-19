@@ -87,7 +87,7 @@ $(document).ready(() => {
         $('#tweet-text').val("");
         $('#tweets').empty();
         $('.error').slideUp();
-        $('#counter').val(140)
+        $('#counter').val(140);
         loadTweets();
       },
       fail: function(error) {
