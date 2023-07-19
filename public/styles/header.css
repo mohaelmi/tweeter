@@ -10,13 +10,16 @@ header {
 }
 
 .img {
-  border: 20px
+  border: 20px;
+  margin-top: 2%;
+  width: 200px;
 }
 
 /* Laptops / Desktops: minimum width of 1024px */
 @media only screen and (min-width: 1024px) {
   #user-info {
     width: 25%;
+    height: auto;
     margin-top: 14.5rem;
     margin-left: 2em;
     margin-right: 2em;
@@ -24,7 +27,7 @@ header {
   }
 
   .container {
-    margin-top: 200px;
+    margin-top: 16%;
     width: 60%;
     margin-right: 50px;
     float: right;
