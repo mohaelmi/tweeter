@@ -19,16 +19,22 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans 3';
+  height: 100vh;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+article header .email {
+  position: absolute;
+  opacity: .4;
+  right: 10%;
+}
 
- main {
+
+
+main {
   width: 90%;
   margin: 0 auto;
   background-color: #f4f1ec;
+  
  }
 
 
@@ -54,26 +60,17 @@ article footer {
 
 }
 
-/* article footer output {
-  padding: 10px;
-} */
 
 article header {
   display: flex;
   flex-direction: row;
-
   height: 70px;
-  background-color: #f4f1ec;
+  background-color: white;
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 5%;
 }
 
-article header .email {
-  position:absolute;
-  opacity: .4;
-  right: 100px;
-  /* float: right; */
-}
+
 
 article header .name {
   margin-left: 20px;
@@ -83,6 +80,19 @@ article #tweets-container  {
   padding-bottom: 20px;
   font-family: 'Source Sans 3';
   border-bottom: 5px solid;
+}
+
+/* Smartphones: minimum width of 250px to maximum width of around 475px */
+@media only screen and (min-width: 250px) and (max-width: 475px) {
+  article header {
+    display: flex;
+    flex-direction: inherit;
+    align-items: baseline;
+
+  }
+
+
+
 }
 
 .icon:hover {

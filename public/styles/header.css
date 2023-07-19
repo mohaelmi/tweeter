@@ -17,9 +17,9 @@ header {
 @media only screen and (min-width: 1024px) {
   #user-info {
     width: 25%;
-    margin-top: 10em;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-top: 14.5rem;
+    margin-left: 2em;
+    margin-right: 2em;
     float: left
   }
 
@@ -30,13 +30,10 @@ header {
     float: right;
   }
 
- 
-
-  .tweet {
-    display: flex;
-    flex-direction: column;
-    
+  article header .email {
+    right: 7%;
   }
+  
   
   
 }

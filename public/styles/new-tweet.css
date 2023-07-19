@@ -27,7 +27,8 @@
   margin-top: 10px;
 }
 
-.counter {
+
+#counter {
   position: absolute;
   right: 5%;
   font-family: 'bungee';
